@@ -1,39 +1,51 @@
 ﻿#contenthost {
-    height: 100%;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .fragment {
-    /* バナーと本体の行を含むグリッドを定義 */
-    -ms-grid-columns: 1fr;
-    -ms-grid-rows: 128px 1fr;
-    display: -ms-grid;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
     .fragment header[role=banner] {
         /* 戻るボタンとページ タイトルの列を含むグリッドを定義します。*/
-        -ms-grid-columns: 37px 83px 1fr;
+        /*-ms-grid-columns: 37px 83px 1fr;
         -ms-grid-rows: 1fr;
-        display: -ms-grid;
+        display: -ms-grid;*/
+        position: absolute;
+        z-index: 1;
+        padding-top: 12px;
+        padding-bottom: 10px;
+        width: 100%;
+        padding-left: 10px;
     }
 
         .fragment header[role=banner] .win-navigation-backbutton {
-            -ms-grid-column: 2;
+            /*-ms-grid-column: 2;
             margin-top: 57px;
             position: relative;
-            z-index: 1;
+            z-index: 1;*/
+            vertical-align: middle;
+            margin-top: 8px;
         }
 
         .fragment header[role=banner] .titlearea {
-            -ms-grid-column: 3;
-            margin-top: 37px;
+            /*-ms-grid-column: 3;
+            margin-top: 37px;*/
+            display: inline;
+            vertical-align: middle;
         }
 
-            .fragment header[role=banner] .titlearea .pagetitle {
+            /*.fragment header[role=banner] .titlearea .pagetitle {
                 width: calc(100% - 20px);
-            }
+            }*/
 
     .fragment section[role=main] {
         -ms-grid-row: 2;

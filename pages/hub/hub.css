@@ -1,5 +1,5 @@
 ﻿.hubpage header[role=banner] {
-    position: relative;
+    position: absolute;
     z-index: 2;
 }
 
@@ -15,7 +15,7 @@
 
 .hubpage .hub .hero {
     -ms-high-contrast-adjust: none;
-    background-image: url(/images/gray.png);
+    background-image: url(../../images/gray.png);
     background-size: cover;
     margin-left: -80px;
     margin-right: 80px;

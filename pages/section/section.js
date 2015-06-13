@@ -3,7 +3,7 @@
 
     var ui = WinJS.UI;
 
-    ui.Pages.define("/pages/section/section.html", {
+    ui.Pages.define("pages/section/section.html", {
         /// <field type="WinJS.Binding.List" />
         _items: null,
 
@@ -45,7 +45,7 @@
 
         _itemInvoked: function (args) {
             var item = this._items.getAt(args.detail.itemIndex);
-            WinJS.Navigation.navigate("/pages/item/item.html", { item: Data.getItemReference(item) });
+            WinJS.Navigation.navigate("pages/item/item.html", { item: Data.getItemReference(item) });
         }
     });
 })();

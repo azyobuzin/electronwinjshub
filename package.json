@@ -1,0 +1,26 @@
+{
+  "name": "electronwinjshub",
+  "version": "1.0.0",
+  "description": "The sample of WinJS Hub application in Electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azyobuzin/electronwinjshub.git"
+  },
+  "author": "azyobuzin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azyobuzin/electronwinjshub/issues"
+  },
+  "homepage": "https://github.com/azyobuzin/electronwinjshub#readme",
+  "dependencies": {
+    "winjs": "^4.0.1"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^0.27.3"
+  }
+}
